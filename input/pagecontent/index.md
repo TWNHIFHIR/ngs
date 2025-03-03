@@ -31,23 +31,24 @@
 <div  style="padding-left: 10px;"> 
 <p>送核、送核補件、申復及申復補件之作業流程皆相同，依該個案是首次送審或不同意後再次送審等之狀態進行選擇不同的申請類別，以做為行政程序之判斷。
 
-送核、送核補件、申復及申復補件作業流程如下：
+送核、送核補件、申復及申復補件作業流程如下：</br>
 
-1. 醫院上傳NGS檢測結果報告（Bundle TWNGS）
+1. 醫院上傳NGS檢測結果報告（Bundle TWNGS）</br>
 
-2. 若資料符合格式，健保署回覆上傳成功訊息，由醫院查詢上傳結果
+2. 若資料符合格式，健保署回覆上傳成功訊息，由醫院查詢上傳結果 </br>
 
-3. 資料上傳成功後，審核醫師審核報告通過，由醫院查詢審核結果
+3. 資料上傳成功後，審核醫師審核報告通過，由醫院查詢審核結果 </br>
 
-4. 資料上傳成功後，審核醫師審核報告未通過，由醫院查詢審核結果
+4. 資料上傳成功後，審核醫師審核報告未通過，由醫院查詢審核結果 </br>
 
-5. 若資料不符合格式，健保署回覆上傳失敗訊息，由醫院查詢上傳結果
+5. 若資料不符合格式，健保署回覆上傳失敗訊息，由醫院查詢上傳結果 </br>
 
 
 </p>
 
-
-<div style="justify-content: center;display: flex;width: 100%;">{% include ngs.svg %}</div>
+<img class="figure-img img-responsive img-rounded center-block" src="ngs.png" alt="ngs流程圖" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
+</div>
+<!--<div style="justify-content: center;display: flex;width: 100%;">{% include ngs.svg %}</div>-->
 
 </div>
 
