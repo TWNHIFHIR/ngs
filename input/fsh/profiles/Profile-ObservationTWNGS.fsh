@@ -19,8 +19,8 @@ Description:    "此基因資訊-Observation TWNGS Profile說明本IG如何進�
 * component ^slicing.rules = #open
 * component contains
     //gene-test-code 0..1 and
-    representative-coding-hgvs 0..1 and
-    gene-list 0..*  and
+    representative-coding-hgvs 0..* and
+    gene-list 1..*  and
     genomic-hgvs 0..1 and
     exact-start-end 0..1 
 //* component[gene-test-code] ^short = "基因檢測代碼"

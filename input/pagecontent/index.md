@@ -50,7 +50,7 @@
 </div>
 <!--<div style="justify-content: center;display: flex;width: 100%;">{% include ngs.svg %}</div>-->
 
-</div>
+
 
 
 ### 如何閱讀這個實作指引(IG)

@@ -22,11 +22,11 @@ Description:    "此基因定序檢測證明文件-Composition TWNGSS Profile說
 	diagnosticReport 1..1 MS and 
 	condition 1..1 MS and
 	gene-organization 1..1 MS and
-	specimen 0..* MS and
-	device 0..* MS and
-	documentReference 0..* MS and
-	observation 0..* MS and
-	serviceRequest 0..* MS
+	specimen 1..* MS and
+	device 1..* MS and
+	documentReference 1..* MS and
+	observation 1..* MS and
+	serviceRequest 1..* MS
 * section.entry[diagnosticReport] ^short = "基因定序檢測報告-DiagnosticReport TWNGS"
 * section.entry[diagnosticReport] only Reference(DiagnosticReportTWNGS)
 

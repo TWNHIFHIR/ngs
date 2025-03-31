@@ -14,7 +14,7 @@ Description:    "此基因報告-DocumentReference TWNGS Profile說明本IG如�
 * content.attachment.url ^short = "基因報告（請填寫完整檔案路徑）"
 * content.attachment.url ^example.valueUrl = "file://PathologyReport01.pdf"
 
-* content.attachment.title 0..1 MS 
+* content.attachment.title 1..1 MS 
 * content.attachment.title ^short = "基因報告名稱。"
 
 * content.attachment.contentType 1..1 MS 
