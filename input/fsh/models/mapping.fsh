@@ -58,7 +58,7 @@ Mapping: TWNGSObservation
 Id: TWNGSObservation
 Title: "Mapping to TWNGS Observation"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Observation-ngs-twngs"
+Target: "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Observation-twngs"
 * gene -> "(基因資訊)"
 * gene.genTestCode -> "component.code.coding.code (基因檢測代碼)"
 * gene.specimePathNo -> "specimen.reference(SpecimenTWNGS)(檢體病理編號)"
