@@ -4,7 +4,7 @@ Id:              Composition-twngs
 Title:          "基因定序檢測證明文件-Composition TWNGS"
 Description:    "此基因定序檢測證明文件-Composition TWNGSS Profile說明本IG如何進一步定義FHIR的Condition Resource以呈現健保次世代基因定序檢測報告之證明文件"
 
-* category 1.. MS 
+* category 1..1 MS 
 * type ^short = "申報類別"
 * type from NHIApplyType
 * category ^short = "案件分類"
@@ -12,7 +12,7 @@ Description:    "此基因定序檢測證明文件-Composition TWNGSS Profile說
 * subject 1..
 * date ^short = "申報日期"
 * author only Reference(OrganizationTWNGS)
-* title = "次世代基因定序檢測報告證明文件"
+* title 1..1 MS
 * section 1.. MS
 * section.entry 1..* MS
 * section.entry ^slicing.discriminator[0].type = #profile

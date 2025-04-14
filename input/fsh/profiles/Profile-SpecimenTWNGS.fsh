@@ -8,6 +8,6 @@ Description:    "此基因檢測檢體-Specimen TWNGS Profile說明本IG如何�
 * type 1..
 * type ^short = "基因檢測檢體類型"
 * subject only Reference(PatientTWNGS)
-* identifier 1..
+* identifier 1..1
 * identifier ^short = "檢體病理編號"
 * type ^short = "基因檢測檢體類型"

@@ -1,22 +1,22 @@
-Instance: bun-document-min
+Instance: bun-nos-min
 InstanceOf: BundleTWNGS
-Title: "上傳慢性右心臟衰竭基因檢測結果資料"
+Title: "上傳 Lung non-small cell lung carcinoma (NOS) 基因檢測結果資料"
 Description: "依據次世代基因定序檢測-Bundle TWNGS Profile呈現醫院端上傳檢測結果資料範例"
 Usage: #example
-* identifier.value = "123456"
+* identifier.value = "789123"
 * identifier.system = "https://www.nhi.gov.tw"
 
 * type = http://hl7.org/fhir/bundle-type#document 
-* timestamp = "2024-06-13T13:50:58.000+08:00"
+* timestamp = "2024-07-25T13:50:58.000+08:00"
 
-* entry[0].fullUrl = "https://twcore.mohw.gov.tw/ig/ngs/Composition/com-min"
-* entry[0].resource = com-min
+* entry[0].fullUrl = "https://twcore.mohw.gov.tw/ig/ngs/Composition/com-nos-min"
+* entry[0].resource = com-nos-min
 
-* entry[1].fullUrl = "https://twcore.mohw.gov.tw/ig/ngs/DiagnosticReport/dia-min"
-* entry[1].resource = dia-min
+* entry[1].fullUrl = "https://twcore.mohw.gov.tw/ig/ngs/DiagnosticReport/dia-nos-min"
+* entry[1].resource = dia-nos-min
 
-* entry[2].fullUrl = "https://twcore.mohw.gov.tw/ig/ngs/Condition/con-min"
-* entry[2].resource = con-min
+* entry[2].fullUrl = "https://twcore.mohw.gov.tw/ig/ngs/Condition/con-nos-min"
+* entry[2].resource = con-nos-min
 
 * entry[3].fullUrl = "https://twcore.mohw.gov.tw/ig/ngs/Patient/pat-min"
 * entry[3].resource = pat-min
@@ -33,11 +33,11 @@ Usage: #example
 * entry[7].fullUrl = "https://twcore.mohw.gov.tw/ig/ngs/Device/dev-min"
 * entry[7].resource = dev-min
 
-* entry[8].fullUrl = "https://twcore.mohw.gov.tw/ig/ngs/DocumentReference/doc-gene-min"
-* entry[8].resource = doc-gene-min
+* entry[8].fullUrl = "https://twcore.mohw.gov.tw/ig/ngs/DocumentReference/doc-nos-min"
+* entry[8].resource = doc-nos-min
 
-* entry[9].fullUrl = "https://twcore.mohw.gov.tw/ig/ngs/Observation/obs-diagnostic-min"
-* entry[9].resource = obs-diagnostic-min
+* entry[9].fullUrl = "https://twcore.mohw.gov.tw/ig/ngs/Observation/obs-nos-min"
+* entry[9].resource = obs-nos-min
 
 * entry[10].fullUrl = "https://twcore.mohw.gov.tw/ig/ngs/ServiceRequest/serReq-min"
 * entry[10].resource = serReq-min

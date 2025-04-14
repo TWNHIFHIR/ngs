@@ -42,7 +42,6 @@ Usage: #definition
 
 * rest.resource[+].type = #Composition
 * rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Composition-twngs"
-* rest.resource[=].supportedProfile[0] = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/composition-twngs"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -123,7 +122,7 @@ Usage: #definition
 
 * rest.resource[+].type = #Organization
 * rest.resource[=].supportedProfile[0] = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Organization-twngs"
-* rest.resource[=].supportedProfile[+] = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Organization-gene-twngs.html"
+* rest.resource[=].supportedProfile[+] = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Organization-gene-twngs"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create

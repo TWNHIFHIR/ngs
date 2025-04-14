@@ -2,7 +2,7 @@
 
 Instance: obs-diagnostic-min
 InstanceOf: ObservationTWNGS
-Title: "基因資訊"
+Title: "BRCA 基因檢測資訊"
 Description: "依據基因資訊-Observation TWNGS Profile呈現基因資訊之範例"
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
@@ -13,17 +13,25 @@ Usage: #example
 * performer.reference = "Organization/org-gene-min"
 * subject.reference = "Patient/pat-min"
 * valueCodeableConcept.coding = http://loinc.org#LA9633-4 "Present"
-//* interpretation.coding = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#POS "Positive"
+* interpretation.coding = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#POS "Positive"
 * method = http://loinc.org#LA26398-0 "Sequencing"
 * specimen.reference = "Specimen/spe-min"
 * effectiveDateTime = "2024-01-01"
+//* component[gene-test-code].code.coding = http://loinc.org#21636-6 "BRCA1 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal"
 * component.code.coding = http://loinc.org#21636-6 "BRCA1 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal"
+
 * component[representative-coding-hgvs].code.coding =  http://loinc.org#48004-6
 * component[representative-coding-hgvs].valueCodeableConcept = http://varnomen.hgvs.org#NM_005228.4:c.2573T>G
-* component[gene-list].code.coding = http://loinc.org#48018-6
-* component[gene-list].valueCodeableConcept = http://www.genenames.org#HGNC:3236 "EGFR"
+* component[representative-coding-hgvs].interpretation = http://loinc.org#LA6692-3 
+
+* component[gene-list][0].code.coding = http://loinc.org#48018-6
+* component[gene-list][0].valueCodeableConcept = http://www.genenames.org#HGNC:3236 "EGFR"
+* component[gene-list][1].code.coding = http://loinc.org#48018-6
+* component[gene-list][1].valueCodeableConcept = http://www.genenames.org##HGNC:1100 "BRCA1"
+
 * component[genomic-hgvs].code.coding = http://loinc.org#81290-9
 * component[genomic-hgvs].valueCodeableConcept = http://varnomen.hgvs.org#NC_000007.13:g.55259515T>G
+
 * component[exact-start-end].code.coding = http://loinc.org#81254-5
 * component[exact-start-end].valueRange.low.value = 96521657
 * component[exact-start-end].valueRange.high.value = 96521657
@@ -46,10 +54,10 @@ Usage: #example
     <p><b>基因定序儀型號</b>：<a href=\"Device-dev-min.html\">Device/dev-min</a></p>
     <p><b>基因檢測日期</b>：2024-01-01</p>   
     <blockquote>
-        <p><b>基因檢測代碼</b>：BRCA1 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> （ <a href=\"http://loinc.org/\">LOINC-基因檢測代碼值集</a>#21636-6） </span></p>
+        <p>基因檢測項目：BRCA1 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINC</a>#21636-6)</span></p>
+        <p>基因檢測列表：EGFR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://www.genenames.org/\">HGNC Gene ID</a>#HGNC:3236)</span></p>
         <p><b>基因檢測分析結果</b>：Present <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINC Answer List LL1971-2 </a>#LA9633-4)</span></p>
         <p><b>基因突變類型</b>：Deletion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> （ <a href=\"http://loinc.org/\">LOINC-基因突變類型值集</a>#LA6692-3） </span></p>
-        <p>基因檢測列表：EGFR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://www.genenames.org/\">HGNC Gene ID</a>#HGNC:3236)</span></p>
         <p>DNA變異 (c.HGVS)：NM_005228.4:c.2573T&gt;G<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://varnomen.hgvs.org/\">HGVS Gene Code</a>)</span></p>
         <p>基因組DNA變異 (gHGVS)：NC_000007.13:g.55259515T&gt;G<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://varnomen.hgvs.org/\">HGVS Gene Code</a>)</span></p>
         <p>基因變異的精確起始與終止位置：96521657-96521657</p>
