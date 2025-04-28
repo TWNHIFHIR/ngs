@@ -102,7 +102,7 @@ Description:    "此基因資訊-Observation TWNGS Profile說明本IG如何進�
 * component[representative-coding-hgvs].valueCodeableConcept.code.coding.system 1..1
 * component[representative-coding-hgvs].valueCodeableConcept.code.coding.system = "http://varnomen.hgvs.org"*/
 
-
+* value[x] 1.. MS
 * value[x] only CodeableConcept
 * valueCodeableConcept ^short = "基因檢測分析結果"
 * valueCodeableConcept MS
@@ -120,7 +120,7 @@ Description:    "此基因資訊-Observation TWNGS Profile說明本IG如何進�
 * subject 1.. MS
 * subject ^short = "病人資訊"
 
-* specimen MS
+* specimen 1.. MS
 * specimen only Reference(SpecimenTWNGS)
 * specimen ^short = "基因檢測檢體類型"
 
@@ -128,11 +128,11 @@ Description:    "此基因資訊-Observation TWNGS Profile說明本IG如何進�
 * effectiveDateTime MS
 * effectiveDateTime ^short = "基因檢測日期"
 
-* device MS
+* device 1.. MS
 * device only Reference(DeviceTWNGS)
 * device ^short = "基因定序儀型號，檢體病理編號"
 
-* derivedFrom MS
+* derivedFrom 1.. MS
 * derivedFrom only Reference(DocumentReferenceTWNGS)
 * derivedFrom ^short = "基因報告"
 

@@ -7,13 +7,13 @@ Description:    "此基因定序檢測報告-DiagnosticReport TWNGSS Profile說�
 * effectiveDateTime MS 
 * performer 1..
 * result 1..
-* effectiveDateTime 1..
+* effectiveDateTime 1..1
 * code = http://loinc.org#51969-4 "Genetic analysis report"
 
-* effectiveDateTime 1..
+* effectiveDateTime 1..1
 * effectiveDateTime ^short = "費用年月"
 
-* performer 1..
+* performer 1..1
 * performer only Reference(OrganizationGeneTWNGS)
 * performer ^short = "基因檢測機構"
 

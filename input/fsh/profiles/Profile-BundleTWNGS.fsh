@@ -5,7 +5,7 @@ Title:          "次世代基因定序檢測-Bundle TWNGS"
 Description:    "次世代基因定序檢測-Bundle TWNGS Profile說明本IG如何進一步定義資料交換基本單位(TW Core Bundle) Profile以呈現次世代基因定序檢測之內容"
 * type = #document
 * identifier ^short = "流水號"
-
+* identifier 1..1 MS
 * entry 6..* MS
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
@@ -17,11 +17,11 @@ Description:    "次世代基因定序檢測-Bundle TWNGS Profile說明本IG如�
 	patient 1..1 MS and
 	hosp-organization 1..1 MS and
 	gene-organization 1..1 MS and
-	specimen 0..* MS and
-	device 0..* MS and
-	documentReference 0..* MS and
-	observation 0..* MS and
-	serviceRequest 0..* MS
+	specimen 1..* MS and
+	device 1..* MS and
+	documentReference 1..* MS and
+	observation 1..* MS and
+	serviceRequest 1..* MS
 
 * entry[composition] ^short = "基因定序檢測證明文件-Composition TWNGS"
 * entry[composition].resource 1..1 MS
