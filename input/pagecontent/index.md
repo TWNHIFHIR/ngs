@@ -28,16 +28,11 @@
 
 #### 架構圖
 
-<div  style="padding-left: 10px;"> 
-<p>上傳、補上傳之作業流程依「全民健康保險鼓勵醫事服務機構即時查詢病患就醫資訊方案」規定辦理。
-
-作業流程如下：</br>
-
-1. 醫院上傳NGS檢測結果報告（Bundle TWNGS）</br>
-2. 若資料符合格式，健保署回覆上傳成功訊息，由醫院查詢上傳結果</br>
-3. 若資料不符合格式，健保署回覆上傳失敗訊息，由醫院查詢上傳結果</br>
-
-</p>
+上傳、補上傳之作業流程依「全民健康保險鼓勵醫事服務機構即時查詢病患就醫資訊方案」規定辦理。
+作業流程如下：
+1. 醫院上傳NGS檢測結果報告（Bundle TWNGS）
+2. 若資料符合格式，健保署回覆上傳成功訊息，由醫院查詢上傳結果
+3. 若資料不符合格式，健保署回覆上傳失敗訊息，由醫院查詢上傳結果
 
 <img class="figure-img img-responsive img-rounded center-block" src="ngs.png" alt="ngs流程圖" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
 </div>
