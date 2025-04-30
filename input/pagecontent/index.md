@@ -34,6 +34,7 @@
 2. 若資料符合格式，健保署回覆上傳成功訊息，由醫院查詢上傳結果
 3. 若資料不符合格式，健保署回覆上傳失敗訊息，由醫院查詢上傳結果
 
+<div>
 <img class="figure-img img-responsive img-rounded center-block" src="ngs.png" alt="ngs流程圖" style="display: block;margin-left: auto;margin-right: auto;width: 50%;"/>
 </div>
 <!--<div style="justify-content: center;display: flex;width: 100%;">{% include ngs.svg %}</div>-->
