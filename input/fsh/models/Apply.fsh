@@ -11,25 +11,25 @@ Description: """
 
 // 疾病資訊
 * diagnosis 1..1 BackboneElement "疾病資訊" "疾病資訊"
-* diagnosis.diagDate 0..1 date "診斷日期" "YYYYMMDD，西元年月日，民國前為負數"
+* diagnosis.diagDate 1..1 date "診斷日期" "YYYYMMDD，西元年月日，民國前為負數"
 * diagnosis.icd10cmCode 1..1 code "國際疾病分類代碼 (sequence=1)，共病症 (sequence>=2)" "國際疾病分類代碼 (sequence=1)，共病症 (sequence>=2)"
 * diagnosis.diagCurrentStatus 1..1 code "簡要病摘。連結院內HIS系統之簡要病摘，或填寫原基因定序檢測之申請理由。" "簡要病摘。連結院內HIS系統之簡要病摘，或填寫原基因定序檢測之申請理由。"
 
 //基因資訊
-* gene 0..* BackboneElement "基因資訊" "基因資訊"
-* gene.genTestCode 0..* CodeableConcept "基因檢測代碼" "基因檢測代碼"
-* gene.specimePathNo 0..* Identifier "檢體病理編號" "檢體病理編號"
-* gene.specimenType 0..* CodeableConcept "基因檢測檢體類型" "基因檢測檢體類型"
-* gene.genOrg 0..* string "基因檢測機構" "基因檢測機構"
-* gene.mutationType 0..* CodeableConcept "基因突變類型" "基因突變類型"
-* gene.genResult 0..* CodeableConcept "基因檢測分析結果" "基因檢測分析結果"
-* gene.genInterpretation 0..* CodeableConcept "基因臨床判讀結果" "基因臨床判讀結果，醫師判讀結果"
-* gene.reportResultString 0..* string "報告結果 - MIMEType" "檢查報告結果-文數字與base64Binary應擇一填寫"
-* gene.genPdf 0..* base64Binary "基因報告（檔案路徑）" "基因報告（請填寫完整檔案路徑）"
-* gene.genPdfTitle 0..* string "基因報告名稱" "基因報告名稱"
-* gene.genTesList 0..* BackboneElement "檢測基因列表" "檢測基因列表"
-* gene.seqNam 0..1 BackboneElement "定序儀名稱" "定序儀名稱"
-* gene.seqModel 0..1 string "定序儀型號" "定序儀型號"
+* gene 1..1 BackboneElement "基因資訊" "基因資訊"
+* gene.genTestCode 1..* CodeableConcept "基因檢測代碼" "基因檢測代碼"
+* gene.specimePathNo 1..1 Identifier "檢體病理編號" "檢體病理編號"
+* gene.specimenType 1..1 CodeableConcept "基因檢測檢體類型" "基因檢測檢體類型"
+* gene.genOrg 1..1 string "基因檢測機構" "基因檢測機構"
+* gene.mutationType 1..1 CodeableConcept "基因突變類型" "基因突變類型"
+* gene.genResult 1..1 CodeableConcept "基因檢測分析結果" "基因檢測分析結果"
+* gene.genInterpretation 1..* CodeableConcept "基因臨床判讀結果" "基因臨床判讀結果，醫師判讀結果"
+* gene.reportResultString 1..1 string "報告結果 - MIMEType" "檢查報告結果-文數字與base64Binary應擇一填寫"
+* gene.genPdf 1..1 base64Binary "基因報告（檔案路徑）" "基因報告（請填寫完整檔案路徑）"
+* gene.genPdfTitle 1..1 string "基因報告名稱" "基因報告名稱"
+* gene.genTesList 1..* BackboneElement "檢測基因列表" "檢測基因列表"
+* gene.seqNam 1..1 BackboneElement "定序儀名稱" "定序儀名稱"
+* gene.seqModel 1..1 string "定序儀型號" "定序儀型號"
 
 // 院所資訊
 * hosp 1..1 BackboneElement "院所資訊" "院所資訊"
@@ -42,11 +42,11 @@ Description: """
 
 
 // 申請資訊
-* apply 1..* BackboneElement "申請項目" "申請項目"
-* apply.cancerDrugType 0..1 CodeableConcept "醫令代碼" "醫令代碼"
-* apply.ngsTesNum 0..1 Identifier "NGS檢測編號(VPN取號)" "NGS檢測編號(VPN取號)"
-* apply.genMethod 0..* CodeableConcept "基因檢測方法" "基因檢測方法"
-* apply.genDate 0..* dateTime "基因檢測日期" "基因檢測日期"
+* apply 1..1 BackboneElement "申請項目" "申請項目"
+* apply.mdicOrdr 1..1 CodeableConcept "醫令代碼" "醫令代碼"
+* apply.ngsTesNum 1..1 Identifier "NGS檢測編號(VPN取號)" "NGS檢測編號(VPN取號)"
+* apply.genMethod 1..1 CodeableConcept "基因檢測方法" "基因檢測方法"
+* apply.genDate 1..1 dateTime "基因檢測日期" "基因檢測日期"
 
 // 病人資訊
 * patient 1..1 BackboneElement "病人資訊" "病人資訊"

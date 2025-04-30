@@ -1,8 +1,8 @@
 ValueSet: DNAChangeType
 Id: dna-change-type
-Title: "LOINC-基因突變類型值集"
-Description: "LOINC-基因突變類型值集"
-* ^date = "2024-10-01"
+Title: "LOINC-健保NGS-基因突變類型值集"
+Description: "LOINC-健保NGS-基因突變類型值集"
+* ^date = "2025-04-30"
 * ^version = "1.0.0"
 * ^experimental = false
 

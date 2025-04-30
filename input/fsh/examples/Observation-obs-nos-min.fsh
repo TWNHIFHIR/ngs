@@ -19,7 +19,11 @@ Usage: #example
 * effectiveDateTime = "2024-07-17"
 
 //基因檢測代碼(檢測項目)
-* component.code.coding = http://loinc.org#21739-8 "TP53 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal"
+//* component.code.coding = http://loinc.org#21739-8 "TP53 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal"
+
+* component[gene-test-code].code.coding = http://loinc.org#81247-9 
+* component[gene-test-code].valueCodeableConcept = http://loinc.org#21739-8 "TP53 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal"
+* component[gene-test-code].interpretation = http://loinc.org#LA6692-3 //"Deletion"
 
 //基因列表
 * component[gene-list][0].code.coding = http://loinc.org#48018-6

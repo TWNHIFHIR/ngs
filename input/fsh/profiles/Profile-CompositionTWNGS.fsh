@@ -12,6 +12,7 @@ Description:    "此基因定序檢測證明文件-Composition TWNGSS Profile說
 * subject 1..
 * date ^short = "申報日期"
 * author only Reference(OrganizationTWNGS)
+* author 1..1 MS
 * title 1..1 MS
 * section 1.. MS
 * section.entry 1..* MS
