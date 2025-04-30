@@ -2,7 +2,7 @@ Instance: CapabilityStatementTWNGSServer
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://twcore.mohw.gov.tw/ig/ngs/CapabilityStatement/CapabilityStatementTWNGSServer"
-* version = "0.1.0"
+* version = "1.0.0"
 * name = "CapabilityStatementTWNGSServer"
 * title = "臺灣次世代基因定序檢測-伺服端(TWNGS Server)"
 * status = #active

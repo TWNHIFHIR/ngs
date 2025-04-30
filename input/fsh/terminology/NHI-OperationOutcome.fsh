@@ -34,7 +34,7 @@ Id: nhi-operationoutcome
 Title: "NHI-系統回應訊息值集"
 Description: "NHI-系統回應訊息值集"
 * ^date = "2025-01-01"
-* ^version = "0.1.0"
+* ^version = "1.0.0"
 * ^experimental = false
 * include codes from system NHIOperationOutcome
 

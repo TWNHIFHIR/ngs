@@ -7,7 +7,7 @@ Description: "臺灣衛生福利部中央健康保險署「案件分類」代碼
 * ^caseSensitive = true
 * ^content = #complete
 * ^date = "2024-07-23"
-* ^version = "0.1.0"
+* ^version = "1.0.0"
 * ^experimental = false
 
 * #01 "西醫一般案件"

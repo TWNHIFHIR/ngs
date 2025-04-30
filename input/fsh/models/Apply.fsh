@@ -7,7 +7,7 @@ Description: """
 瞭解各資料欄位實際使用本IG的哪個Profiles的哪個資料項目（element）。亦可配合
 [視覺化邏輯模型圖]進行欄位對應。
 """
-* ^version = "0.1.0"
+* ^version = "1.0.0"
 
 // 疾病資訊
 * diagnosis 1..1 BackboneElement "疾病資訊" "疾病資訊"
