@@ -1,13 +1,13 @@
 CodeSystem: NHICaseClassification
 Id: nhi-case-classification
-Title: "NHI-案件分類"
-Description: "臺灣衛生福利部中央健康保險署「案件分類」代碼，代碼出版日期：2024-07-23；資料所屬單位：臺灣衛生福利部中央健康保險署。
+Title: "NHI-健保NGS-案件分類"
+Description: "臺灣衛生福利部中央健康保險署「案件分類」代碼，代碼出版日期：2025-04-30；資料所屬單位：臺灣衛生福利部中央健康保險署。
 
 *因原始資料無代碼版本資訊，故使用其「生效日期」作為版本資訊。*"
 * ^caseSensitive = true
 * ^content = #complete
-* ^date = "2024-07-23"
-* ^version = "0.1.0"
+* ^date = "2025-04-30"
+* ^version = "1.0.0"
 * ^experimental = false
 
 * #01 "西醫一般案件"
@@ -62,7 +62,7 @@ Description: "臺灣衛生福利部中央健康保險署「案件分類」代碼
 
 ValueSet: NHICaseClassification
 Id: nhi-case-classification
-Title: "NHI-案件分類"
+Title: "NHI-健保NGS-案件分類"
 Description: "臺灣衛生福利部中央健康保險署「案件分類」值集，值集出版日期：2024-07-26；資料所屬單位：臺灣衛生福利部中央健康保險署。
 
 *因原始資料無值集版本資訊，故使用其「生效日期」作為版本資訊。*"

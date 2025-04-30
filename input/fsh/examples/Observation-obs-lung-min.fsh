@@ -19,7 +19,11 @@ Usage: #example
 * effectiveDateTime = "2024-07-17"
 
 //基因檢測代碼(檢測項目)
-* component.code.coding = http://loinc.org#38412-3 "FGFR2 gene targeted mutation analysis in Blood or Tissue by Molecular genetics method"
+//* component.code.coding = http://loinc.org#38412-3 "FGFR2 gene targeted mutation analysis in Blood or Tissue by Molecular genetics method"
+
+* component[gene-test-code].code.coding = http://loinc.org#81247-9 
+* component[gene-test-code].valueCodeableConcept = http://loinc.org#38412-3 "FGFR2 gene targeted mutation analysis in Blood or Tissue by Molecular genetics method"
+* component[gene-test-code].interpretation = http://loinc.org#LA6692-3 //"Deletion"
 
 //基因列表
 * component[gene-list][0].code.coding = http://loinc.org#48018-6

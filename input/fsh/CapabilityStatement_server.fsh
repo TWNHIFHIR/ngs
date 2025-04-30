@@ -2,13 +2,13 @@ Instance: CapabilityStatementTWNGSServer
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://twcore.mohw.gov.tw/ig/ngs/CapabilityStatement/CapabilityStatementTWNGSServer"
-* version = "0.1.0"
+* version = "1.0.0"
 * name = "CapabilityStatementTWNGSServer"
 * title = "臺灣次世代基因定序檢測-伺服端(TWNGS Server)"
 * status = #active
 * experimental = false
 * publisher = "衛生福利部中央健康保險署"
-* date = "2024-12-16"
+* date = "2025-04-30"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #xml
@@ -180,7 +180,7 @@ Usage: #definition
         <li>實作指引版本：1.0.0</li>
         <li>FHIR版本：4.0.1</li>
         <li>支援格式：<code>json</code></li>
-        <li>發佈日：2024-12-16</li>
+        <li>發佈日：2025-04-30</li>
         <li>發佈者：衛生福利部中央健康保險署</li>
     </ul>
     <h3 id=\"shallIGs\">必須（SHALL）支援以下實作指引</h3>

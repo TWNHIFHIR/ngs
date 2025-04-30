@@ -17,8 +17,14 @@ Usage: #example
 * method = http://loinc.org#LA26398-0 "Sequencing"
 * specimen.reference = "Specimen/spe-min"
 * effectiveDateTime = "2024-01-01"
+
 //* component[gene-test-code].code.coding = http://loinc.org#21636-6 "BRCA1 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal"
-* component.code.coding = http://loinc.org#21636-6 "BRCA1 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal"
+//* component.code.coding = http://loinc.org#21636-6 "BRCA1 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal"
+
+* component[gene-test-code].code.coding = http://loinc.org#81247-9
+* component[gene-test-code].valueCodeableConcept = http://loinc.org#21636-6 "BRCA1 gene mutations found [Identifier] in Blood or Tissue by Molecular genetics method Nominal"
+* component[gene-test-code].interpretation = http://loinc.org#LA6692-3 //"Deletion"
+
 
 * component[representative-coding-hgvs].code.coding =  http://loinc.org#48004-6
 * component[representative-coding-hgvs].valueCodeableConcept = http://varnomen.hgvs.org#NM_005228.4:c.2573T>G

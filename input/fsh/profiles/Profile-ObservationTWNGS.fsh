@@ -4,32 +4,38 @@ Parent:         Observation
 Id:             Observation-twngs
 Title:          "基因資訊-Observation TWNGS"
 Description:    "此基因資訊-Observation TWNGS Profile說明本IG如何進一步定義FHIR的Observation Resource以呈現次世代基因定序檢測之基因資訊"
-* identifier MS
+* identifier 1..1 MS
 * identifier.value MS
 * identifier ^short = "NGS檢測編號(VPN取號)，編號由「適用癌別+取號西元年+流水號5碼」組成。"
 * code.coding 1..1
 * code.coding.code 1..1 MS
 * code.coding.system = "http://loinc.org"
 * code.coding.code = #69548-6 "Genetic variant assessment"
-* component.code ^short = "基因檢測代碼"
-* component.code 1..1 MS
-* component.code from GeneTestCode (extensible)
+//* component.code ^short = "基因檢測代碼"
+//* component.code 1..1 MS
+//* component.code from GeneTestCode (extensible)
 * component ^slicing.discriminator.type = #value
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains
-    //gene-test-code 1..1 and
+    gene-test-code 1..1 and
     gene-list 1..*  and
     representative-coding-hgvs 1..* and
     genomic-hgvs 0..* and
     exact-start-end 0..1 
-//* component[gene-test-code] ^short = "基因檢測代碼"
-//* component[gene-test-code].code MS
-//* component[gene-test-code].code from GeneTestCode (extensible)
-//* component[gene-test-code].code ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-72275-c37534eb968943109de663267c439d9a-1.ods)。"
-//* component[gene-test-code].code.coding 1..1
-//* component[gene-test-code].code.coding.system 1..1
-//* component[gene-test-code].code.coding.system = "http://loinc.org"
+* component[gene-test-code] ^short = "基因檢測項目(基因檢測代碼)"
+* component[gene-test-code].code = http://loinc.org#81247-9 "Master HL7 genetic variant reporting panel"
+* component[gene-test-code].code ^short = "Master HL7 genetic variant reporting panel"
+* component[gene-test-code].value[x] 1..
+* component[gene-test-code].value[x] only CodeableConcept
+* component[gene-test-code].value[x] from GeneTestCode (required)
+* component[gene-test-code].interpretation 1..1 MS
+* component[gene-test-code].interpretation from DNAChangeType (extensible)
+* component[gene-test-code].interpretation.coding.code 1..1
+* component[gene-test-code].interpretation ^short = "基因突變類型"
+* component[gene-test-code].interpretation ^definition = "Type of DNA change observed. Convenience property for variants with exact breakpoints, required otherwise."
+* component[gene-test-code].interpretation.coding.code ^short = "LA6692-3: Deletion | LA6686-5: Duplication | LA6687-3: Insertion | LA6688-1: Insertion/Deletion | LA6689-9: Inversion | LA6690-7: Substitution | 101397-8: Copy number variation analysis Sequencing Doc (Bld/Tiss) | 81695-9: MSI Ca spec-Imp | 94077-5: TMB Tumor-Imp | O55-2: Delins"
+* component[gene-test-code].interpretation.text ^short = "基因突變類型。若無合適代碼，可使用此欄位以文字呈現。請勿將醫事機構名稱、病人及醫師姓名等資訊列入結果中上傳，且不得包含HTML或XML等語法。"
 
 * component[gene-list] ^short = "檢測基因列表"
 * component[gene-list] ^definition = "檢測基因列表"
@@ -75,25 +81,7 @@ Description:    "此基因資訊-Observation TWNGS Profile說明本IG如何進�
 * component[exact-start-end].value[x] ^short = "基因變異的精確範圍"
 
 //基因檢測代碼如果使用HGVS的編碼方式，此編碼是會顯示出『基因名稱、位置、變異型』此三元素的排列
-/* component ^slicing.discriminator.type = #pattern
-* component ^slicing.discriminator.path = "code.coding.system"
-* component ^slicing.rules = #closed
-* component contains
-    representative-coding-hgvs 0..* MS 
-* component[representative-coding-hgvs] ^short = "基因檢測代碼"
-* component[representative-coding-hgvs].code MS
-* component[representative-coding-hgvs].code from GeneTestCode (extensible)
-* component[representative-coding-hgvs].code.coding 1..1
-* component[representative-coding-hgvs].code.coding.system 1..1
-* component[representative-coding-hgvs].code.coding.system = "http://loinc.org"
-* component[representative-coding-hgvs].interpretation 0..1 MS
-* component[representative-coding-hgvs].interpretation from DNAChangeType (extensible)
-* component[representative-coding-hgvs].interpretation.coding.code 1..1
-* component[representative-coding-hgvs].interpretation ^short = "基因突變類型"
-* component[representative-coding-hgvs].interpretation ^definition = "Type of DNA change observed. Convenience property for variants with exact breakpoints, required otherwise."
-* component[representative-coding-hgvs].interpretation.coding.code ^short = "LA6692-3: Deletion | LA6686-5: Duplication | LA6687-3: Insertion | LA6688-1: Insertion/Deletion | LA6689-9: Inversion | LA6690-7: Substitution | 101397-8: Copy number variation analysis Sequencing Doc (Bld/Tiss) | 81695-9: MSI Ca spec-Imp | 94077-5: TMB Tumor-Imp | O55-2: Delins"
-* component[representative-coding-hgvs].interpretation.text ^short = "基因突變類型。若無合適代碼，可使用此欄位以文字呈現。請勿將醫事機構名稱、病人及醫師姓名等資訊列入結果中上傳，且不得包含HTML或XML等語法。"
-* component[representative-coding-hgvs].value[x] 1.. MS
+/* component[representative-coding-hgvs].value[x] 1.. MS
 * component[representative-coding-hgvs].value[x] only CodeableConcept
 * component[representative-coding-hgvs].valueCodeableConcept.code MS
 * component[representative-coding-hgvs].valueCodeableConcept.code ^short = "基因檢測列表"
@@ -112,7 +100,7 @@ Description:    "此基因資訊-Observation TWNGS Profile說明本IG如何進�
 * interpretation 1.. MS
 * interpretation ^short = "基因臨床判讀結果，醫師判讀結果"
 
-* performer MS
+* performer 1..1 MS
 * performer only Reference(OrganizationGeneTWNGS)
 * performer ^short = "基因檢測機構，衛福部公告名冊或LDTs核定函上之「案件編號」"
 
@@ -125,7 +113,7 @@ Description:    "此基因資訊-Observation TWNGS Profile說明本IG如何進�
 * specimen ^short = "基因檢測檢體類型"
 
 * effective[x] only dateTime
-* effectiveDateTime MS
+* effectiveDateTime 1..1 MS
 * effectiveDateTime ^short = "基因檢測日期"
 
 * device 1.. MS

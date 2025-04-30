@@ -1,9 +1,9 @@
 ValueSet: SpecimenType
 Id: specime-type
-Title: "LOINC-基因檢測檢體類型值集"
-Description: "LOINC-基因檢測檢體類型值集"
-* ^date = "2024-10-01"
-* ^version = "0.1.0"
+Title: "LOINC-健保NGS-基因檢測檢體類型值集"
+Description: "LOINC-健保NGS-基因檢測檢體類型值集"
+* ^date = "2025-04-30"
+* ^version = "1.0.0"
 * ^experimental = false
 /* BLOOD */
 * $loinc#LP7057-5

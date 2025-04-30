@@ -2,13 +2,13 @@ Instance: CapabilityStatementTWNGSClient
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://twcore.mohw.gov.tw/ig/ngs/CapabilityStatement/CapabilityStatementTWNGSClient"
-* version = "0.1.0"
+* version = "1.0.0"
 * name = "CapabilityStatementTWNGSClient"
 * title = "臺灣次世代基因定序檢測-用戶端(TWNGS Client)"
 * status = #active
 * experimental = false
 * publisher = "衛生福利部中央健康保險署"
-* date = "2024-12-16"
+* date = "2025-04-30"
 * kind = #requirements
 * fhirVersion = #4.0.1
 * format[0] = #xml
@@ -178,10 +178,10 @@ Usage: #definition
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
     <h2 id=\"title\">臺灣次世代基因定序檢測-用戶端(TWPAS Client)</h2>
     <ul>
-        <li>實作指引版本：0.1.0</li>
+        <li>實作指引版本：1.0.0</li>
         <li>FHIR版本：4.0.1</li>
         <li>支援格式：<code>json</code></li>
-        <li>發佈日：2024-12-16</li>
+        <li>發佈日：2025-04-30</li>
         <li>發佈者：衛生福利部中央健康保險署</li>
     </ul>
     <h3 id=\"shallIGs\">建議應該（SHOULD）支援以下實作指引</h3>
