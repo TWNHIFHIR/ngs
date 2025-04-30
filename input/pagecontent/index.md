@@ -40,8 +40,6 @@
 <!--<div style="justify-content: center;display: flex;width: 100%;">{% include ngs.svg %}</div>-->
 
 
-
-
 ### 如何閱讀這個實作指引(IG)
 <div  style="padding-left: 10px;"> 
 <p>本IG之網站架構圖如下圖所示。各功能說明如下：</p>
