@@ -1,7 +1,7 @@
 Instance: CapabilityStatementTWNGSServer
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "https://twcore.mohw.gov.tw/ig/ngs/CapabilityStatement/CapabilityStatementTWNGSServer"
+* url = "https://nhicore.nhi.gov.tw/ngsCapabilityStatement/CapabilityStatementTWNGSServer"
 * version = "1.0.0"
 * name = "CapabilityStatementTWNGSServer"
 * title = "臺灣次世代基因定序檢測-伺服端(TWNGS Server)"
@@ -14,13 +14,13 @@ Usage: #definition
 * format[0] = #xml
 * format[+] = #json
 * patchFormat = #application/json-patch+json
-* implementationGuide = "https://twcore.mohw.gov.tw/ig/ngs/ImplementationGuide/tw.gov.mohw.nhi.ngs"
+* implementationGuide = "https://nhicore.nhi.gov.tw/ngs/ImplementationGuide/tw.gov.mohw.nhi.ngs"
 * description = "臺灣次世代基因定序檢測實作指引(TWNGS IG)伺服端(Server)之能力聲明"
 * rest.mode = #server
 * rest.documentation = "臺灣次世代基因定序檢測-伺服端(TWNGS Server)必須(SHALL)：(1)支援本實作指引中所有profiles (2)根據FHIR規範實作RESTful (3)回傳狀態碼-①(Status 400)：無效參數(invalid parameter)、②(Status 401/4xx)：未經授權的請求(unauthorized request)、③(Status 403)：未充分授權的資料存取範圍(insufficient premission scope)、④(Status 404)：未知的resource(unknown resource) (4)支援JSON格式 (5)可識別每個新增到Server的實例(instance)之meta.profile是否為臺灣流感抗病毒藥劑Profiles Defining URL，並確認實例是否依循Profile製作。臺灣接種疫苗或開立藥品紀錄上傳-伺服端建議應該(SHOULD)：(1)支援XML格式。"
 
 * rest.resource[+].type = #Bundle
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Bundle-twngs"
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Bundle-twngs"
 * rest.resource[=].conditionalCreate = true
 * rest.resource[=].conditionalUpdate = true
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
@@ -34,13 +34,13 @@ Usage: #definition
 * rest.resource[=].interaction[=].code = #read
 * rest.resource[=].referencePolicy = #resolves
 * rest.resource[=].searchParam[0].name = "_id"
-* rest.resource[=].searchParam[=].definition = "https://twcore.mohw.gov.tw/ig/ngs/SearchParameter/Bundle-id"
+* rest.resource[=].searchParam[=].definition = "https://nhicore.nhi.gov.tw/ngsSearchParameter/Bundle-id"
 * rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 
 * rest.resource[+].type = #Composition
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Composition-twngs"
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Composition-twngs"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -53,7 +53,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #Condition
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Condition-twngs"
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Condition-twngs"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -66,7 +66,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #Device
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Device-twngs"
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Device-twngs"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -80,7 +80,7 @@ Usage: #definition
 
 
 * rest.resource[+].type = #DiagnosticReport
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/DiagnosticReport-twngs"
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/ngsStructureDefinition/DiagnosticReport-twngs"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -93,7 +93,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #DocumentReference
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/DocumentReference-twngs"
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/ngsStructureDefinition/DocumentReference-twngs"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -107,7 +107,7 @@ Usage: #definition
 
 
 * rest.resource[+].type = #Observation
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Observation-twngs"
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Observation-twngs"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -120,8 +120,8 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #Organization
-* rest.resource[=].supportedProfile[0] = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Organization-twngs"
-* rest.resource[=].supportedProfile[+] = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Organization-gene-twngs"
+* rest.resource[=].supportedProfile[0] = "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Organization-twngs"
+* rest.resource[=].supportedProfile[+] = "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Organization-gene-twngs"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -135,7 +135,7 @@ Usage: #definition
 
 
 * rest.resource[+].type = #Patient
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Patient-twngs"
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Patient-twngs"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -148,7 +148,7 @@ Usage: #definition
 * rest.resource[=].referencePolicy = #resolves
 
 * rest.resource[+].type = #ServiceRequest
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/ServiceRequest-twngs"
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/ngsStructureDefinition/ServiceRequest-twngs"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create
@@ -162,7 +162,7 @@ Usage: #definition
 
 
 * rest.resource[+].type = #Specimen
-* rest.resource[=].profile = "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Specimen-twngs"
+* rest.resource[=].profile = "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Specimen-twngs"
 * rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].interaction[=].extension.valueCode = #SHALL
 * rest.resource[=].interaction[=].code = #create

@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: tw.gov.mohw.nhi.ngs
-canonical: https://twcore.mohw.gov.tw/ig/ngs
+canonical: https://nhicore.nhi.gov.tw/ngs
 name: TWNGS
 title: 臺灣次世代基因定序檢測實作指引
 description: 臺灣次世代基因定序檢測實作指引(TWNGS IG)
