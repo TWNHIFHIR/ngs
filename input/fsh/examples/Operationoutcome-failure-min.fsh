@@ -1,4 +1,4 @@
-Alias: $NHIOperationOutcome =  https://nhicore.nhi.gov.tw/ngsCodeSystem/nhi-operationoutcome
+Alias: $NHIOperationOutcome =  https://nhicore.nhi.gov.tw/ngs/CodeSystem/nhi-operationoutcome
 
 Instance: operation-failure-min
 InstanceOf: Operationoutcome-twngs

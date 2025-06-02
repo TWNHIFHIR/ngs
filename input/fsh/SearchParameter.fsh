@@ -2,7 +2,7 @@
 Instance: Bundle-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "https://nhicore.nhi.gov.tw/ngsSearchParameter/Bundle-id"
+* url = "https://nhicore.nhi.gov.tw/ngs/SearchParameter/Bundle-id"
 * name = "BundleID"
 * status = #active
 * version = "1.0.0"

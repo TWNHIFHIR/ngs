@@ -4,8 +4,8 @@ Title: "Lung non-small cell lung carcinoma (NOS) 基因檢測報告之證明文�
 Description: "依據基因定序檢測證明文件-Composition TWNGSS Profile呈現健保次世代基因定序檢測報告之證明文件資料範例"
 Usage: #example
 * status = http://hl7.org/fhir/composition-status#final
-* type = https://nhicore.nhi.gov.tw/ngsCodeSystem/nhi-apply-type#1 "送核"
-* category = https://nhicore.nhi.gov.tw/ngsCodeSystem/nhi-case-classification#04 "西醫慢性病"
+* type = https://nhicore.nhi.gov.tw/ngs/CodeSystem/nhi-apply-type#1 "送核"
+* category = https://nhicore.nhi.gov.tw/ngs/CodeSystem/nhi-case-classification#04 "西醫慢性病"
 * date = "2024-07-25"
 * subject = Reference(Patient/pat-min)
 * section.entry[0] = Reference(DiagnosticReport/dia-nos-min)
