@@ -3,7 +3,7 @@ Mapping: TWNGSBundle
 Id: TWNGSBundle
 Title: "Mapping to TWNGS Bundle"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Bundle-twngs"
+Target: "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Bundle-twngs"
 * diagnosis -> "(疾病資訊)"
 * diagnosis.icd10cmCode -> "entry:Condition.code（國際疾病分類代碼）"
 * gene -> "(基因資訊)"
@@ -21,7 +21,7 @@ Mapping: TWNGSComposition
 Id: TWNGSComposition
 Title: "Mapping to TWNGS Composition"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Composition-twngs"
+Target: "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Composition-twngs"
 * hosp -> "(院所資訊)"
 * hosp.applType -> "type（申報類別）"
 * hosp.decDate -> "date（申報日期）"
@@ -32,7 +32,7 @@ Mapping: TWNGSCondition
 Id: TWNGSCondition
 Title: "Mapping to TWNGS Condition"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Condition-twngs"
+Target: "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Condition-twngs"
 * diagnosis -> "(疾病資訊)"
 * diagnosis.icd10cmCode -> "code.coding（國際疾病分類代碼）"
 * diagnosis.diagDate -> "recordedDate（診斷日期）"
@@ -43,7 +43,7 @@ Mapping: TWNGSDiagnosticReport
 Id: TWNGSDiagnosticReport
 Title: "Mapping to TWNGS DiagnosticReport"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/DiagnosticReport-twngs"
+Target: "https://nhicore.nhi.gov.tw/ngsStructureDefinition/DiagnosticReport-twngs"
 * diagnosis -> "(疾病資訊)"
 * diagnosis.icd10cmCode -> "supporting-info.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo').valueReference.reference(Condition) (國際疾病分類代碼)"
 * gene -> "(基因資訊)"
@@ -58,7 +58,7 @@ Mapping: TWNGSObservation
 Id: TWNGSObservation
 Title: "Mapping to TWNGS Observation"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Observation-twngs"
+Target: "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Observation-twngs"
 * gene -> "(基因資訊)"
 * gene.genTestCode -> "component：gene-test-code (基因檢測代碼)"
 * gene.specimePathNo -> "specimen.reference(SpecimenTWNGS)(檢體病理編號)"
@@ -77,7 +77,7 @@ Mapping: TWNGSSpecimen
 Id: TWNGSSpecimen
 Title: "Mapping to TWNGS Specimen"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Specimen-twngs"
+Target: "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Specimen-twngs"
 * gene -> "(基因資訊)"
 * gene.specimePathNo -> "identifier.value (檢體病理編號)"
 * gene.specimenType -> "type.coding (基因檢測檢體類型)"
@@ -86,7 +86,7 @@ Mapping: TWNGSOrganization
 Id: TWNGSOrganization
 Title: "Mapping to TWNGS Organization"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Organization-twngs"
+Target: "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Organization-twngs"
 * hosp -> "(院所資訊)"
 * hosp.hospId -> "identifier.value (醫事機構代碼)"
 * gene -> "(基因資訊)"
@@ -97,7 +97,7 @@ Mapping: TWNGSDocumentReference
 Id: TWNGSDocumentReference
 Title: "Mapping to TWNGS DocumentReference"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/DocumentReference-twngs"
+Target: "https://nhicore.nhi.gov.tw/ngsStructureDefinition/DocumentReference-twngs"
 * gene -> "(基因資訊)"
 * gene.reportResultString -> "content.attachment.contentType（報告結果）" 
 * gene.genPdf -> "content.attachment.url（檔案路徑）"
@@ -107,7 +107,7 @@ Mapping: TWNGSDevice
 Id: TWNGSDevice
 Title: "Mapping to TWNGS Device"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Device-twngs"
+Target: "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Device-twngs"
 * gene -> "(基因資訊)"
 * gene.seqNam -> "deviceName (定序儀名稱)"
 * gene.seqModel -> "modelNumber (定序儀型號)"
@@ -118,7 +118,7 @@ Mapping: TWNGSPatient
 Id: TWNGSPatient
 Title: "Mapping to TWNGS Patient"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/Patient-twngs"
+Target: "https://nhicore.nhi.gov.tw/ngsStructureDefinition/Patient-twngs"
 * patient -> "(病人資訊)"
 * patient.patId -> "identifier.where(type.coding.code = 'MR').value (病歷號)"
 * patient.name -> "name.text (姓名)"
@@ -131,7 +131,7 @@ Mapping: TWNGSServiceRequest
 Id: TWNGSServiceRequest
 Title: "Mapping to TWNGS ServiceRequest"
 Source: ApplyModel
-Target: "https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/ServiceRequest-twngs"
+Target: "https://nhicore.nhi.gov.tw/ngsStructureDefinition/ServiceRequest-twngs"
 * apply -> "(申請項目)"
 * apply.mdicOrdr -> "code.coding (基因定序檢測申請品項之醫令代碼)"
 

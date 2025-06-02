@@ -25,7 +25,7 @@ Description:    "此基因定序檢測報告-DiagnosticReport TWNGSS Profile說�
 * result ^short = "基因資訊"
 
 * extension contains
-    https://twcore.mohw.gov.tw/ig/ngs/StructureDefinition/extension-DiagnosticReport-condition named condition 1..1 MS
+    https://nhicore.nhi.gov.tw/ngsStructureDefinition/extension-DiagnosticReport-condition named condition 1..1 MS
 * extension ^short = "疾病資訊"
 
 
