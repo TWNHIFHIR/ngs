@@ -43,7 +43,7 @@ Description:    "此基因資訊-Observation TWNGS Profile說明本IG如何進�
 * component[gene-list].code ^short = "Gene studied [ID]"
 * component[gene-list].value[x] 1..
 * component[gene-list].value[x] only CodeableConcept
-* component[gene-list].value[x] from HGNCGnenID (required)
+* component[gene-list].value[x] from HGNCVS (required)
 * component[gene-list].value[x] ^short = "HGNC基因表包含基因ID、基因符號和完整基因名稱。"
 
 * component[representative-coding-hgvs] ^short = "DNA變異 (c.HGVS)"
@@ -52,7 +52,7 @@ Description:    "此基因資訊-Observation TWNGS Profile說明本IG如何進�
 * component[representative-coding-hgvs].code ^short = "DNA change (c.HGVS)"
 * component[representative-coding-hgvs].value[x] 1..
 * component[representative-coding-hgvs].value[x] only CodeableConcept
-* component[representative-coding-hgvs].value[x] from HGVSGeneCode (required)
+* component[representative-coding-hgvs].value[x] from http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgvs-vs (required)
 * component[representative-coding-hgvs].value[x] ^short = "使用HGVS的'c.'字串表示DNA之變異，如：NM_005228.5:c.2369C>T。"
 * component[representative-coding-hgvs].interpretation 1..* MS
 * component[representative-coding-hgvs].interpretation from DNAChangeType (extensible)
@@ -70,7 +70,7 @@ Description:    "此基因資訊-Observation TWNGS Profile說明本IG如何進�
 * component[genomic-hgvs].code ^short = "Genomic DNA change (gHGVS)"
 * component[genomic-hgvs].value[x] 1..
 * component[genomic-hgvs].value[x] only CodeableConcept
-* component[genomic-hgvs].value[x] from HGVSGeneCode (required)
+* component[genomic-hgvs].value[x] from http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgvs-vs (required)
 * component[genomic-hgvs].value[x] ^short = "使用HGVS的'g.' 字串表示基因組DNA變異，如：NC_000016.9:g.2124200_2138612dup。"
 
 * component[exact-start-end] ^short = "基因變異的精確起始與終止位置"
