@@ -58,7 +58,7 @@ Description:    "此基因資訊-Observation TWNGS Profile說明本IG如何進�
 * component[representative-coding-hgvs].interpretation from DNAChangeType (extensible)
 * component[representative-coding-hgvs].interpretation.coding.code 1..1
 * component[representative-coding-hgvs].interpretation ^short = "基因突變類型"
-* component[representative-coding-hgvs].interpretation ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-72275-c37534eb968943109de663267c439d9a-1.ods)。"
+* component[representative-coding-hgvs].interpretation ^binding.description = "最新參考代碼清單請參考[此檔案](https://www.nhi.gov.tw/ch/dl-75853-85b695304c2c447a94a55a3788019ccf-1.ods)。"
 * component[representative-coding-hgvs].interpretation ^definition = "Type of DNA change observed. Convenience property for variants with exact breakpoints, required otherwise."
 * component[representative-coding-hgvs].interpretation.coding.code ^short = "LA6692-3: Deletion | LA6686-5: Duplication | LA6687-3: Insertion | LA6688-1: Insertion/Deletion | LA6689-9: Inversion | LA6690-7: Substitution | 101397-8: Copy number variation analysis Sequencing Doc (Bld/Tiss) | 81695-9: MSI Ca spec-Imp | 94077-5: TMB Tumor-Imp | O55-2: Delins"
 * component[representative-coding-hgvs].interpretation.text ^short = "基因突變類型。若無合適代碼，可使用此欄位以文字呈現。請勿將醫事機構名稱、病人及醫師姓名等資訊列入結果中上傳，且不得包含HTML或XML等語法。"
