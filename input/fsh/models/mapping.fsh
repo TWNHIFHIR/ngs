@@ -1,4 +1,4 @@
-
+/*
 Mapping: TWNGSBundle
 Id: TWNGSBundle
 Title: "Mapping to TWNGS Bundle"
@@ -135,4 +135,4 @@ Target: "https://nhicore.nhi.gov.tw/ngs/StructureDefinition/ServiceRequest-twngs
 * apply -> "(申請項目)"
 * apply.mdicOrdr -> "code.coding (基因定序檢測申請品項之醫令代碼)"
 
-
+*/

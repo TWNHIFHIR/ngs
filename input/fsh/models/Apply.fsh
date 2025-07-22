@@ -1,4 +1,4 @@
-Logical: ApplyModel
+/*Logical: ApplyModel
 Id: ApplyModel
 Title: "申請(Apply)次世代基因定序檢測之資料模型"
 Description: """
@@ -57,3 +57,4 @@ Description: """
 * patient.birthday 1..1 date "出生日期" "出生日期"
 
 
+*/
