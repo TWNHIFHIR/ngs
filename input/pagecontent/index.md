@@ -5,7 +5,7 @@
 ### 專案介紹
 <div  style="padding-left: 10px;"> 
 
-<p>臺灣健保次世代基因定序實作指引(Taiwan NHI Next Generation Sequencing Implementation Guide，簡稱TWNGS IG)採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1之標準基礎上，繼承TW Core IG V0.3.1 (2024-10-21)，進一步定義適用於「次世代基因定序」資料需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等。</p>
+<p>臺灣健保次世代基因定序實作指引(Taiwan NHI Next Generation Sequencing Implementation Guide，簡稱TWNGS IG)採用HL7® FHIR® standard（Fast Healthcare Interoperability Resources）IG建置方法，在FHIR R4.0.1之標準基礎上，繼承TW Core IG V0.3.2 (2024-12-12)，進一步定義適用於「次世代基因定序」資料需求的Resources（類似資料表）、其中的資料項目（意即欄位）、基數（意即0..1、0..*、1..1或1..*）及資料類型（文字、日期時間、代碼等）等。</p>
 
 </div>
 
