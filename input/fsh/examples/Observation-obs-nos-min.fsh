@@ -6,7 +6,7 @@ Title: "Lung non-small cell lung carcinoma (NOS) 基因檢測資訊"
 Description: "依據基因資訊-Observation TWNGS Profile呈現基因資訊之範例"
 Usage: #example
 * status = http://hl7.org/fhir/observation-status#final
-* identifier.value = "121992445968"
+* identifier.value = "114501001011202506011"
 * code.coding.system = "http://loinc.org"
 * code.coding.code = #69548-6 "Genetic variant assessment"
 * category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
@@ -106,6 +106,7 @@ Usage: #example
         <p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Observation-twngs.html\">基因資訊-Observation TWNGS</a></p>
     </div>
     <p><b>狀態</b>：final</p>
+    <p><b>流水號</b>：114501001011202506011</p>    
     <p><b>類型</b>：Laboratory<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/CodeSystem/observation-category\">Observation Category Codes</a>#laboratory)</span></p>
     <p><b>項目</b>：Genetic variant assessment<span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://loinc.org/\">LOINC</a>#69548-6)</span></p>
     <p><b>病人</b>：<a href=\"Patient-pat-min.html\">Patient/pat-min</a></p>

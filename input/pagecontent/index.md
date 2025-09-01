@@ -1,5 +1,14 @@
 <div class="bg-success" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
-<b>相關資訊可參考衛生福利部中央健康保險署的<a href="https://www.nhi.gov.tw/ch/np-3636-1.html">次世代基因定序（NGS）專區</a>。</b>
+<b>相關資訊可參考衛生福利部中央健康保險署的<a href="https://www.nhi.gov.tw/ch/cp-17770-4f2cf-3878-1.html">次世代基因定序（NGS）專區</a>。</b>
+</div>
+
+<div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
+因考量實作需求，於2025/9/1異動以下內容：
+    <ol>  
+        <li>修改<a href="StructureDefinition-Bundle-twngs.html">Profile: 次世代基因定序檢測-Bundle TWNGS</a>：<code>identifier</code>欄位調正為填入「NGS檢測編號(VPN取號)」，以符合健保署業務作業。</li>
+        <li>修改<a href="StructureDefinition-Observation-twngs.html">Profile: 基因資訊-Observation TWNGS</a>：<code>identifier</code>欄位調正為填入「流水號」，以符合健保署業務作業。</li>
+	</ol>
+    請留意這些異動，以避免影響您的實作。
 </div>
 
 ### 專案介紹

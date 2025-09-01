@@ -13,7 +13,7 @@ INFORMATION: ValueSet.where(id = 'nhi-organization'): The value set expansion is
 
 # http://www.genenames.org之代碼系統因THO並未定義其代碼，所以HL7 validator 無法辨識此代碼系統。但這些代碼系統已被檢查過，其identifiers是正確的。（WARNING後方的藍色字樣(1 uses) 是指WARNING在此Profile中有被使用到）
 %Unable to provide support for code system http://www.genenames.org
-%Unable to check whether the code is in the value set 'https://nhicore.nhi.gov.tw/ngs/ValueSet/hgnc-vs|1.0.0' because the code system http://www.genenames.org was not found%
+%Unable to check whether the code is in the value set 'https://nhicore.nhi.gov.tw/ngs/ValueSet/hgnc-vs|1.0.1' because the code system http://www.genenames.org was not found%
 %A definition for CodeSystem 'http://www.genenames.org' could not be found, so the code cannot be validated%
 
 # 本IG中並未使用到SNOMED CT代碼，此WARNING並不影響驗證。（WARNING後方的藍色字樣(1 uses) 是指WARNING在此Profile中有被使用到）

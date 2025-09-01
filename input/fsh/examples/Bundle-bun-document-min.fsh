@@ -3,7 +3,7 @@ InstanceOf: BundleTWNGS
 Title: "上傳慢性右心臟衰竭基因檢測結果資料"
 Description: "依據次世代基因定序檢測-Bundle TWNGS Profile呈現醫院端上傳檢測結果資料範例"
 Usage: #example
-* identifier.value = "123456"
+* identifier.value = "101202401021"
 * identifier.system = "https://www.nhi.gov.tw"
 
 * type = http://hl7.org/fhir/bundle-type#document 

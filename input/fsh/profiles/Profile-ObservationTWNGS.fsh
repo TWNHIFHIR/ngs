@@ -6,7 +6,7 @@ Title:          "基因資訊-Observation TWNGS"
 Description:    "此基因資訊-Observation TWNGS Profile說明本IG如何進一步定義FHIR的Observation Resource以呈現次世代基因定序檢測之基因資訊"
 * identifier 1..1 MS
 * identifier.value MS
-* identifier ^short = "NGS檢測編號(VPN取號)，編號由「適用癌別+取號西元年+流水號5碼」組成。"
+* identifier ^short = "流水號，編號由「院所代碼(10碼)＋醫事類別(2碼)+費用年月(yyyymm01，8碼)+申報類別(1送核/2補報)＋申報日期(yyyymmdd，8碼，填寫為補報時才會有這個日期)」組成。"
 * code.coding 1..1
 * code.coding.code 1..1 MS
 * code.coding.system = "http://loinc.org"

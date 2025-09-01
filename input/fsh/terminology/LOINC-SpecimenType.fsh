@@ -3,7 +3,7 @@ Id: specime-type
 Title: "LOINC-健保NGS-基因檢測檢體類型值集"
 Description: "LOINC-健保NGS-基因檢測檢體類型值集"
 * ^date = "2025-04-30"
-* ^version = "1.0.0"
+* ^version = "1.0.1"
 * ^experimental = false
 /* BLOOD */
 * $loinc#LP7057-5

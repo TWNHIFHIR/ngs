@@ -3,7 +3,7 @@ InstanceOf: BundleTWNGS
 Title: "上傳 Lung non-small cell lung carcinoma (NOS) 基因檢測結果資料"
 Description: "依據次世代基因定序檢測-Bundle TWNGS Profile呈現醫院端上傳檢測結果資料範例"
 Usage: #example
-* identifier.value = "789123"
+* identifier.value = "101202445968"
 * identifier.system = "https://www.nhi.gov.tw"
 
 * type = http://hl7.org/fhir/bundle-type#document 

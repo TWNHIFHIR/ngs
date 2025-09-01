@@ -4,7 +4,7 @@ Id:             Bundle-twngs
 Title:          "次世代基因定序檢測-Bundle TWNGS"
 Description:    "次世代基因定序檢測-Bundle TWNGS Profile說明本IG如何進一步定義資料交換基本單位(TW Core Bundle) Profile以呈現次世代基因定序檢測之內容"
 * type = #document
-* identifier ^short = "流水號"
+* identifier ^short = "NGS檢測編號(VPN取號)，編號由「適用癌別3碼＋西元年4碼＋流水號5碼」組成。"
 * identifier 1..1 MS
 * entry 6..* MS
 * entry ^slicing.discriminator.type = #profile

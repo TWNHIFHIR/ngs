@@ -5,7 +5,7 @@ Id: nhi-ngs-payment
 Title: "NHI-健保NGS-NGS檢驗給付項目值集"
 Description: "NHI-健保NGS-NGS檢驗給付項目值集"
 * ^date = "2025-04-30"
-* ^version = "1.0.0"
+* ^version = "1.0.1"
 * ^experimental = false
 * $TWMedicalServicePayment#30301B "實體腫瘤次世代基因定序－BRCA1/2基因檢測"
 * $TWMedicalServicePayment#30302B "實體腫瘤次世代基因定序－小套組(≦100個基因)"
