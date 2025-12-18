@@ -6,9 +6,9 @@ Description: "LOINC-健保NGS-基因突變類型值集"
 * ^version = "1.0.1"
 * ^experimental = false
 
-* $loinc#LA6692-3 "Deletion"
-* $loinc#LA6686-5 "Duplication"
-* $loinc#LA6687-3 "Insertion"
-* $loinc#LA6688-1 "Insertion/Deletion (indel)"
-* $loinc#LA6689-9 "Inversion"
-* $loinc#LA6690-7 "Substitution"
+* $loinc#LA6692-3
+* $loinc#LA6686-5
+* $loinc#LA6687-3
+* $loinc#LA6688-1
+* $loinc#LA6689-9
+* $loinc#LA6690-7
