@@ -7,6 +7,7 @@ Description:    "此基因定序檢測報告之疾病資訊-Condition TWNGSS Pro
 * code 1..
 * recordedDate 1..
 * note 1..
+* subject only Reference(PatientTWNGS)
 //* code.coding[absentOrUnknownProblem] 0..0
 //* code.coding[sct] 0..0
 //* code.coding[icd10-cm-2023] 1..1

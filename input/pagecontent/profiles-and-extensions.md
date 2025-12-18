@@ -32,7 +32,7 @@
 
 #### OperationOutcome
 
-- [系統回應訊息-Operationoutcome TWNGS](StructureDefinition-Operationoutcome-twngs.html)
+- [系統回應訊息-OperationOutcome TWNGS](StructureDefinition-Operationoutcome-twngs.html)
 
 #### Organization
 
