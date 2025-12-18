@@ -22,7 +22,7 @@ Description:    "此基因報告-DocumentReference TWNGS Profile說明本IG如�
 * content.attachment.contentType ^short = "報告結果-MIMEType"
 
 * subject only Reference(PatientTWNGS) 
-* author only Reference(TW Core Practitioner or TW Core PractitionerRole or TW Core Organization or Device or PatientTWNGS or TW Core RelatedPerson)
+* author only Reference(TWCorePractitioner or TWCorePractitionerRole or TWCoreOrganization or Device or PatientTWNGS or TWCoreRelatedPerson)
 
 
 Invariant:   UploadContent

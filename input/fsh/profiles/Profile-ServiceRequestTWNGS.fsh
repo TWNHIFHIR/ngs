@@ -6,7 +6,7 @@ Description:    "此基因定序檢測申請項目ServiceRequest TWNGS Profile�
 * status =  http://hl7.org/fhir/request-status#active
 * intent =  http://hl7.org/fhir/request-intent#plan
 * subject only Reference(PatientTWNGS)
-* requester only Reference(PatientTWNGS or TW Core Practitioner or TW Core Organization or TW Core PractitionerRole or TW Core RelatedPerson or TW Core Implantable Device)
+* requester only Reference(PatientTWNGS or TWCorePractitioner or TWCoreOrganization or TWCorePractitionerRole or TWCoreRelatedPerson or TWCoreImplantableDevice)
 * code.coding contains
 	nhi-ngs-payment 1..1 MS
 * code.coding[nhi-ngs-payment] ^short = "基因定序檢測的申請項目醫令代碼"
