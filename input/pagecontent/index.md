@@ -5,8 +5,8 @@
 <div class="bg-warning" style="ol { counter-reset: item } li { display: block } li:before { content: counters（item, ">
 因考量實作需求，於2025/9/1異動以下內容：
     <ol>  
-        <li>修改<a href="StructureDefinition-Bundle-twngs.html">Profile: 次世代基因定序檢測-Bundle TWNGS</a>：<code>identifier</code>欄位調正為填入「NGS檢測編號(VPN取號)」，以符合健保署業務作業。</li>
-        <li>修改<a href="StructureDefinition-Observation-twngs.html">Profile: 基因資訊-Observation TWNGS</a>：<code>identifier</code>欄位調正為填入「流水號」，以符合健保署業務作業。</li>
+        <li>修改<a href="StructureDefinition-Bundle-twngs.html">Profile: 次世代基因定序檢測-Bundle TWNGS</a>：<code>identifier</code>欄位調整為填入「NGS檢測編號(VPN取號)」，以符合健保署業務作業。</li>
+        <li>修改<a href="StructureDefinition-Observation-twngs.html">Profile: 基因資訊-Observation TWNGS</a>：<code>identifier</code>欄位調整為填入「流水號」，以符合健保署業務作業。</li>
 	</ol>
     請留意這些異動，以避免影響您的實作。
 </div>

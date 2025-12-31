@@ -1,4 +1,4 @@
-/*Logical: ApplyModel
+Logical: ApplyModel
 Id: ApplyModel
 Title: "申請(Apply)次世代基因定序檢測之資料模型"
 Description: """
@@ -7,7 +7,6 @@ Description: """
 瞭解各資料欄位實際使用本IG的哪個Profiles的哪個資料項目（element）。亦可配合
 [視覺化邏輯模型圖]進行欄位對應。
 """
-* ^version = "1.0.1"
 
 // 疾病資訊
 * diagnosis 1..1 BackboneElement "疾病資訊" "疾病資訊"
@@ -55,4 +54,3 @@ Description: """
 * patient.name 1..1 HumanName "姓名" "姓名"
 * patient.gender 1..1 code "病人性別" "病人性別"
 * patient.birthday 1..1 date "出生日期" "出生日期"
-*/

@@ -1,4 +1,4 @@
-Alias: $HGNC = http://www.genenames.org
+/*Alias: $HGNC = http://www.genenames.org
 Alias: $HGNCGroup = http://www.genenames.org/genegroup
 
 ValueSet: HGNCVS
@@ -9,4 +9,4 @@ Description: "This value set includes all HGNC Codes, which includes multiple co
 * ^version = "3.0.0"
 * ^experimental = false
 * include codes from system $HGNC
-* include codes from system $HGNCGroup
+* include codes from system $HGNCGroup*/
