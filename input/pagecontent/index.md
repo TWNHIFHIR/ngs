@@ -99,7 +99,7 @@
 <tr>
 <td>作者-IG</td>
 <td>李奇安</td>
-<td rowspan="2" style="vertical-align: middle;">資拓宏宇</td>
+<td rowspan="2" style="vertical-align: middle;">資拓宏宇國際股份有限公司</td>
 </tr>
 <tr>
 <td>作者-IG</td>
